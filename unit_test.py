@@ -17,6 +17,7 @@ class Rectangle:
         self.width = width
 
 
+# The test based on unittest module
 class UnitTestForRectangle(unittest.TestCase):
     def test_1(self):
         rectangle = Rectangle(16,2)
@@ -54,5 +55,5 @@ class UnitTestForRectangle(unittest.TestCase):
         with self.assertRaises(ZeroDivisionError):
             a = 1 / 0
 
-
+# run the test
 unittest.main()
