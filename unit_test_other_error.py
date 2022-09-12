@@ -18,33 +18,13 @@ class Rectangle:
 
 
 class UnitTestForRectangle(unittest.TestCase):
-    def test_1(self):
-        rectangle = Rectangle(16,2)
-        self.assertEqual(rectangle.get_area(), 32, "Test Case Failed")
-
-    def test_2(self):
-        rectangle = Rectangle(12, 3)
-        self.assertEqual(rectangle.get_area(), 36, "incorrect area")
-
-    def test_3(self):
-        """expect -1 as output to denote error when looking at negative area"""
-        rectangle = Rectangle(-2, 1)
-        self.assertEqual(rectangle.get_area(), -2, "incorrect negative output")
-
-    def test_4(self):
-        rectangle = Rectangle(5.5, 4.4)
-        self.assertEqual(rectangle.get_area(), 24.200000000000003, "Float value not match")
-
-    def test_5(self):
-        rectangle = Rectangle(9,4)
-        self.assertEqual(rectangle.get_area(), 36, "Integer test case failed")
 
     def test_6(self):
         rectangle = Rectangle(20, 5)
         self.assertEqual(rectangle.get_area(), 100, "Test-6 failed")
 
     def test_geq(self):
-        rectangle = Rectangle(20, 5)
+        rectangle = Rectangle(200, 5)
         """tests if value is greater than or equal to a particular target"""
         self.assertGreaterEqual(rectangle.get_area(), -1)
 
