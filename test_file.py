@@ -17,7 +17,7 @@ class Rectangle:
 # the test function to be executed by Pytest
 def test_normal_case():
     rectangle = Rectangle(4, 6)
-    assert rectangle.get_area() == 55, "incorrect area"
+    assert rectangle.get_area() == 24, "incorrect area"
 
 
 def main():
