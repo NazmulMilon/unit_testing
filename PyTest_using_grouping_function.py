@@ -15,6 +15,7 @@ class Rectangle:
 
 
 # PyTest also supports grouping functions together in classes, but the class should be named with prefix “Test”
+# The test functions to be executed by PyTest
 class TestGetAreaRectangle:
     # the test function to be executed by Pytest
     def test_normal_case(self):
